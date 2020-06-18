@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: hsl(0, 100%, 74%) url(../images/bg-intro-desktop.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+.learn {
+  color: white;
+}
+
+.learn h1 {
+  font-size: 48px;
+  font-weight: 700;
+  max-width: 620px;
+  line-height: 54px;
+}
+
+.learn p {
+  margin-top: 25px;
+  max-width: 550px;
+}
+
+.register-info {
+  width: 450px;
+}
+
+.register-info button {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+}
+
+.register-info button bold {
+  font-weight: 700;
+}
+
+.register {
+  margin-top: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  padding-bottom: 35px;
+  border-radius: 10px;
+}
+
+.register input {
+  font-weight: 500;
+  padding: 0 10px;
+  font-family: inherit;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.register input::placeholder {
+  font-weight: 700;
+}
+
+.register button {
+  height: 50px;
+  width: 100%;
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.register p {
+  color: hsl(246, 25%, 77%);
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register p a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1339px) {
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  main {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .learn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .learn h1 {
+    font-size: 32px;
+    max-width: 300px;
+    line-height: 38px;
+  }
+
+  .learn p {
+    max-width: 315px;
+  }
+
+  .register-info {
+    max-width: 450px;
+    width: 98%;
+  }
+
+  .register-info > button {
+    margin-top: 40px;
+    padding-left: 25%;
+    padding-right: 25%;
+    line-height: 22px;
+    height: 80px;
+  }
+
+  .register {
+    align-items: center;
+  }
+
+  .register p {
+    width: 70%;
+  }
+}
